@@ -1,0 +1,467 @@
+*{margin:0;
+padding: 0;}
+body {
+    font-weight: 400;
+    font-family: Roboto,Arial,sans-serif;
+    color: #747474;
+    height: 3000px;
+}
+/*-------------------------------------------------------
+-----------------------Header--------------------------
+-------------------------------------------------------*/
+.main-header{
+    position: fixed;
+    width: 100%;
+    height: 9%;
+    background-color:white;
+    z-index: 1;
+}
+ .section_inner {
+    float: left;
+    padding-left: 20%;
+    clear: both;
+}
+.section_inner img{
+    margin-top: -15px;
+    width: 250px;
+    height: 100px;
+}
+.main-nav  {
+    display: flex;
+    float: right;
+    margin-right: 25%;
+    padding-top: 20px;  
+}
+.main-nav a { 
+    text-decoration: none;
+    padding: 2px;
+    font-size: 15px;
+}
+.main-nav a:hover {
+    color: green;
+}
+.main-nav a:focus {
+    color: green;
+}
+
+.dropbtn {
+    background-color: none;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  li {
+    list-style: none;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+/*-------------------------------------------------------
+-----------------------Lead--------------------------
+-------------------------------------------------------*/
+.lead_section__inner{
+    padding-top: 5%;
+    display: block;
+    }
+.lead__logo{
+        width: 40px;
+        height: 40px;
+        position: relative;
+        padding-top: 50px;
+        padding-left: 50%;
+    }
+.lead_section__inner h1{
+    text-align: center;
+    font-size: 2.125rem;
+    color: #00b39b;
+    margin: 1em 0;
+    font-family: Work Sans,Arial,sans-serif;
+    font-weight: 300;
+    letter-spacing: -.3px;
+}
+.grid{
+    display: flex;
+    justify-content: center;  
+}
+.grid p{
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+    line-height: 1.5;
+}
+/*-------------------------------------------------------
+-----------------------Services--------------------------
+-------------------------------------------------------*/
+.services_section__inner{
+    padding: 0 14%;
+}
+.box {
+    display: flex;  
+    justify-content:space-around;  
+  }
+  .services_section__inner .Card:hover{
+      transform: scale(1.1);
+  }
+  .Card {
+      width: 250px;
+      height: 300px;
+      border-radius: 20px;
+      padding: 1.3rem 2rem;
+      text-align: start;
+      line-height: 1.6;
+      color: white;
+      transition: 0.4s;   
+  }
+  .Card i {
+    font-size: 1.5rem;
+    padding-left: 0rem;
+    padding-bottom: 1rem;     
+  }
+#card1{
+    background-color: #1AD1B9;
+}
+#card2{
+    background-color:#5190E2;
+}
+#card3{
+    background-color: #acb0b4;
+    display: block;
+}
+.services_section__inner h5{
+    font-size: 1.8rem;
+    font-family: monospace; 
+}
+.services_section__inner p{
+    font-size: 1.2rem;
+    font-family: monospace; 
+    padding-bottom: 3rem;
+}
+select {
+  
+   appearance:none;
+   outline:0;
+   box-shadow:none;
+   border:0!important;
+   background: none;
+   flex: 1;
+   padding: 0 .5em;
+   color:rgb(36, 33, 33);
+   cursor:pointer;
+   font-size: 1em;
+   font-family: 'Open Sans', sans-serif;
+   text-decoration: underline;   
+}
+
+.select {
+   position: relative;
+   width: 20em;
+   height: 2em;
+   line-height: 3;
+   background: none;
+   overflow: hidden;
+   border-radius: .25em;
+   font-size: 1rem;
+   display: block; 
+}
+.select::after {
+   content: '\25BC';
+   position: absolute;
+   top: 0;
+   left: 11rem;
+   padding: 0 1em;
+   color: rgb(23, 22, 22);;
+   cursor:pointer;
+   outline:cursor;
+   transition:.25s all ease;
+}
+/*-------------------------------------------------------
+-----------------------brands--------------------------
+-------------------------------------------------------*/
+.brands{
+    display: flex;
+    padding: 50px 200px;
+}
+.brands h1 {
+    padding-left: 40px;
+    width: 33%;
+    font-size: 1.3em;
+    margin: 0.25em 0 0.35em;
+    padding-right: 1em;
+    font-family: Work Sans,Arial,sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #00b39b;
+    line-height: 2;
+}
+.logo-brands {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 0;
+    list-style: none;
+    width: 67%;
+    padding: 0 20px;
+
+}
+.logo-brands a {
+    padding: 10px;;
+    text-decoration: none;
+    color: #3d83df;
+    outline: 0;
+    transition: all .2s ease 0s;
+    background-color: transparent;
+}
+.logo-brands a svg {
+    height: 20px;
+    width: auto;
+    max-width: 100%;
+    transition: all .2s ease 0s;
+    filter: invert(98%) sepia(2%) saturate(0) hue-rotate(180deg) brightness(300%) contrast(0);
+    -webkit-filter: invert(98%) sepia(2%) saturate(0) hue-rotate(180deg) brightness(300%) contrast(0);
+    opacity: .55;
+}
+.logo-brands .jameda img {
+    height: 20px;
+}
+.logo-brands .tuotempo img {
+    height: 16px;
+}
+.logo-brands .gipo img {
+    height: 34px; 
+}
+.logo-brands .clinic img {
+    height: 34px; 
+}
+
+.img1{
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.logo-brands .clinic img, .logo-brands .feeg img, .logo-brands .gipo img, .logo-brands .jameda img, .logo-brands .tuotempo img {
+    transition: all .2s ease 0s;
+    filter: invert(98%) sepia(2%) saturate(0) hue-rotate(180deg) brightness(300%) contrast(0);
+    -webkit-filter: invert(98%) sepia(2%) saturate(0) hue-rotate(180deg) brightness(300%) contrast(0);
+    opacity: .55;
+}
+/*-------------------------------------------------------
+-----------------------section4-------------------------
+-------------------------------------------------------*/
+
+.section4{
+    background-color: #e5faf8;
+    padding:100px 200px;
+    margin:0;
+    background-size: 100% 100%;
+}
+.alpha{
+    display: flex;
+    justify-content: space-between;
+}
+
+#c1 {
+    width: 170px;
+    height: 250px;
+    border-radius: 5px;
+    padding: 2rem 2rem;
+    text-align: start;
+    line-height: 1.6;
+    background-color: white;
+    text-align: center; 
+    margin: 10px; 
+}
+ h4{
+    color: #1AD1B9;
+    font-weight: 300;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 6;
+    font-size: 1rem;
+}
+
+.par1 h3{
+    color: #00b39b;
+    text-align: justify;
+    width: 400px;
+    font-weight: 300;
+    font-size: 2.2rem;
+    letter-spacing: -.3px;
+    font-family: Work Sans,Arial,sans-serif;
+    padding-bottom: 20px;
+}
+#c1 p{
+    font-size: 0.8rem;
+     padding-top: 30px;
+}
+.boxx{
+    padding-left: 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.par1 img{
+    padding-top: 150px;
+}
+/*-------------------------------------------------------
+-----------------------section6/-------------------------
+-------------------------------------------------------*/
+.section6{
+    padding: 30px;
+    text-align: center;
+}
+.section6 p{
+    padding: 20px;
+    line-height: 1.5rem;
+}
+.section6 h1{
+    color: #00b39b;
+    font-weight: 300;
+    letter-spacing: 3;
+    font-family:  Work Sans,Arial,sans-serif;
+}
+/*-------------------------------------------------------
+-----------------------offices-------------------------
+-------------------------------------------------------*/
+
+.offices {
+    margin: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card22 {
+    width: 315px;
+    height: 350px;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin: 10px;
+    cursor: pointer;
+   }
+.card22:hover{
+    transform: translateY(-1%);
+    box-shadow: rgba(187, 175, 125, 0.25) 0px 13px 47px -5px, rgba(59, 46, 46, 0.3) 0px 8px 16px -8px;
+}
+   
+   .card-img {
+    height: 40%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+    padding:auto;
+   }
+   
+   .card-info {
+    padding-top: 10%;
+   }
+ 
+   .card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 170px;
+    border-top: 1px solid #ddd;
+   }
+   
+   /*Text*/
+   .text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+   }
+ 
+   /*Button*/
+   .card-button {
+    display: flex;
+    padding: .5em;
+    border-radius: 50px;
+    
+   }
+   button{
+    border: none;
+    background: none;
+    appearance: none;
+    background-color: #5190E2;
+    padding: 7px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+   }
+   button:hover{
+    background-color: #3d83df;
+   }
+   /*-------------------------------------------------------
+-----------------------section7-------------------------
+-------------------------------------------------------*/
+
+.section7 h2{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-weight: 300;
+    letter-spacing: 3;
+    font-family:  Work Sans,Arial,sans-serif;
+    
+}
+.btn-primary{
+    flex-direction: row;
+   text-align: center;
+   padding-bottom: 100px;
+   
+}
+/*----------------------------------------------
+---------------------footer-------------------------------
+----------------------------------------------------------*/
+
+.main-footer {
+    border-top: 1px solid #eef2f2;
+    text-align: center;
+    padding: 1em 0;
+}
+footer {
+    display: block;
+}
+.section__inner {
+    zoom: 1;
+    max-width: 1015px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+}
+.main-footer .section__inner, .main-footer p {
+    font-size: 12px;
+    color: #ababab;
+}
+.main-footer .section__inner p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} 
